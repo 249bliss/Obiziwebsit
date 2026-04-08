@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekenobizi Autonomous Community</title>
+  <meta name="description" content="Ekenobizi Autonomous Community. Unity that runs deep, Vision that soars high. Discover our heritage, leadership, and development initiatives." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVIGATION ======= -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-emblem">E</div>
+        <div class="brand-text">
+          <span class="brand-name">Ekenobizi</span>
+          <span class="brand-subtitle">Autonomous Community</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#guardians">Leadership</a></li>
+        <li><a href="#projects">Facilities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#cta" class="nav-cta">Join Us</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO SECTION — VIDEO BACKGROUND ======= -->
+  <section id="hero" class="hero">
+    <!-- Video Background -->
+    <div class="hero-video-wrapper">
+      <video id="heroVideo" autoplay muted loop playsinline class="hero-video">
+        <!-- To use your own video: replace the src below with a local file path e.g. assets/videos/hero.mp4 -->
+        <source src="assets/Videos/Hero Video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="hero-badge" data-hero-anim="badge">
+        <span class="badge-dot"></span>
+        Abia State, Nigeria
+      </div>
+      <h1 class="hero-title" data-hero-anim="title">
+        Welcome to
+        <span class="hero-title-highlight"> Ekenobizi</span>
+      </h1>
+      <p class="hero-tagline" data-hero-anim="tagline">Autonomous Community</p>
+      <p class="hero-subtitle" data-hero-anim="subtitle">
+        Unity that runs deep Vision that soars high.
+      </p>
+      <div class="hero-actions" data-hero-anim="actions">
+        <a href="#about" class="btn btn-primary">Explore Community</a>
+        <a href="#cta" class="btn btn-outline">Get Involved</a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ======= VISION SECTION ======= -->
+  <section id="about" class="vision-section">
+    <div class="container">
+      <div class="vision-grid">
+        <div class="vision-content reveal-left">
+          <div class="section-tag">Our Foundation</div>
+          <h2 class="section-title">Unity that runs deep,<br /><em>Vision that soars high</em></h2>
+          <p class="vision-text">
+            Ekenobizi is a community of individuals committed to autonomous growth for all. A bonded, indigenous community established and governed by its own people. This autonomous community has a rich history spanning decades of communal unity, cultural preservation, and progressive development.
+          </p>
+          <p class="vision-text">
+            They are also a mixture of a diverse culture of people who speak different languages yet share the same vision of a peaceful, prosperous community where every member thrives.
+          </p>
+          <div class="vision-features">
+            <div class="vision-feat reveal-item">
+              <div class="feat-icon"><i class="fa-solid fa-leaf"></i></div>
+              <div>
+                <strong>Rich Cultural Heritage</strong>
+                <p>Centuries of tradition preserved and celebrated</p>
+              </div>
+            </div>
+            <div class="vision-feat reveal-item">
+              <div class="feat-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div>
+                <strong>Strong Community Bonds</strong>
+                <p>United across generations and backgrounds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vision-image-wrap reveal-right">
+          <div class="vision-image-card">
+            <img
+              src="assets/images/Our%20Foundation.jfif"
+              alt="Ekenobizi community landmark"
+              class="vision-img"
+              loading="lazy"
+            />
+            <div class="vision-image-badge">
+              <span>Est.</span>
+              <strong>1984</strong>
+            </div>
+          </div>
+          <div class="vision-float-card reveal-item">
+            <div class="float-icon"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <strong>Autonomous Status</strong>
+              <p>Officially recognized autonomous community</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= GUARDIANS SECTION ======= -->
+  <section id="guardians" class="guardians-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Leadership</div>
+        <h2 class="section-title">Our <span class="highlight">Leadership</span></h2>
+        <p class="section-desc">The pillars of wisdom and strength who guide our community forward with honour and dedication.</p>
+      </div>
+
+      <!-- Featured Guardian -->
+      <div class="featured-guardian reveal-up">
+        <div class="fg-image-wrap">
+          <img
+            src="assets/images/King.jpg"
+            alt="His Royal Majesty Eze Sir"
+            class="fg-img"
+            loading="lazy"
+          />
+          <div class="fg-crown">👑</div>
+        </div>
+        <div class="fg-info">
+          <div class="fg-tag">Royal Majesty</div>
+          <h3 class="fg-name">His Royal Majesty, Eze Sir.<br /><em>Solomon Kanu .</em></h3>
+          <p class="fg-title">Eze Ekenobizi II, The Traditional Ruler</p>
+          <p class="fg-bio">
+            His Royal Majesty Eze Sir Solomon Kanu serving as the eternal fountain of guidance and wisdom for the Ekenobizi people. His reign has been marked by peace, prosperity, and progressive development that has elevated the community's standing.
+          </p>
+          <div class="fg-actions">
+            <a href="#contact" class="btn btn-primary btn-sm">Learn More</a>
+            <a href="#contact" class="btn btn-outline-white btn-sm">Contact Office</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Guardians Grid -->
+      <div class="guardians-grid">
+        <div class="guardian-card reveal-card" style="--delay: 0s">
+          <div class="gc-img-wrap">
+            <img src="assets/images/Chief Elder.jfif" alt="Chief Obi James" class="gc-img" loading="lazy" />
+          </div>
+          <div class="gc-info">
+            <span class="gc-role">Chief Elder</span>
+            <h4>Chief Obi James</h4>
+            <p>Community Council</p>
+          </div>
+        </div>
+        <div class="guardian-card reveal-card" style="--delay: 0.1s">
+          <div class="gc-img-wrap">
+            <img src="assets/images/Council Head.jfif" alt="Chief Nwachukwu" class="gc-img" loading="lazy" />
+          </div>
+          <div class="gc-info">
+            <span class="gc-role">Council Head</span>
+            <h4>Chief Nwachukwu</h4>
+            <p>Development Chair</p>
+          </div>
+        </div>
+        <div class="guardian-card reveal-card" style="--delay: 0.2s">
+          <div class="gc-img-wrap">
+            <img src="assets/images/Secretary.jfif" alt="Chief Emeka" class="gc-img" loading="lazy" />
+          </div>
+          <div class="gc-info">
+            <span class="gc-role">Secretary</span>
+            <h4>Chief Emeka</h4>
+            <p>Admin & Records</p>
+          </div>
+        </div>
+        <div class="guardian-card reveal-card" style="--delay: 0.3s">
+          <div class="gc-img-wrap">
+            <img src="assets/images/Women Leader.jpeg" alt="Lolo Ada Obi" class="gc-img" loading="lazy" />
+          </div>
+          <div class="gc-info">
+            <span class="gc-role">Women Leader</span>
+            <h4>Lolo Ada Obi</h4>
+            <p>Women's Society</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= BUILT FOR OUR PEOPLE ======= -->
+  <section id="projects" class="people-section">
+    <div class="container">
+      <div class="people-grid-layout">
+        <div class="people-content reveal-left">
+          <div class="section-tag">Our Facilities</div>
+          <h2 class="section-title">Built for <em>Our People</em></h2>
+          <p class="section-desc" style="text-align:left; max-width: 420px;">
+            Our community initiatives are designed with every member in mind, from health and culture to women empowerment and governance.
+          </p>
+        </div>
+        <div class="people-icons-grid">
+          <div class="people-card reveal-card" style="--delay: 0s">
+            <div class="pc-icon"><i class="fa-solid fa-hospital-user"></i></div>
+            <h4>Community Hospital</h4>
+            <p>Quality healthcare accessible to all members of Ekenobizi community</p>
+          </div>
+          <div class="people-card reveal-card" style="--delay: 0.15s">
+            <div class="pc-icon"><i class="fa-solid fa-masks-theater"></i></div>
+            <h4>Cultural Practices</h4>
+            <p>Preserving our rich traditions, festivals and cultural identity</p>
+          </div>
+          <div class="people-card reveal-card" style="--delay: 0.3s">
+            <div class="pc-icon"><i class="fa-solid fa-person-dress"></i></div>
+            <h4>Women Society</h4>
+            <p>Empowering women through education, trade, and leadership roles</p>
+          </div>
+          <div class="people-card reveal-card" style="--delay: 0.45s">
+            <div class="pc-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <h4>Town Hall</h4>
+            <p>Transparent governance and community-driven decision making</p>
+          </div>
+          <div class="people-card reveal-card" style="--delay: 0.6s">
+            <div class="pc-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h4>Scholarship Fund</h4>
+            <p>Supporting the academic dreams of our brightest young minds</p>
+          </div>
+          <div class="people-card reveal-card" style="--delay: 0.75s">
+            <div class="pc-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+            <h4>Agric Support</h4>
+            <p>Boosting food security and farmer livelihoods across the community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ENTREPRENEURIAL SPIRIT ======= -->
+  <section class="spirit-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Economy</div>
+        <h2 class="section-title">The <span class="highlight">Entrepreneurial Spirit</span></h2>
+        <p class="section-desc">Our community thrives through agriculture, trade, and creative enterprise, building wealth from within.</p>
+      </div>
+      <div class="spirit-grid">
+        <div class="spirit-card spirit-large reveal-card" style="--delay: 0s">
+          <img src="assets/images/Agriculture Hub.jpeg" alt="Agriculture" class="spirit-img" loading="lazy" />
+          <div class="spirit-overlay">
+            <h3>Agriculture Hub</h3>
+            <p>Fertile lands and modern farming practices feeding thousands</p>
+          </div>
+        </div>
+        <div class="spirit-card reveal-card" style="--delay: 0.15s">
+          <img src="assets/images/Craftmanship.jfif" alt="Artisan craft" class="spirit-img" loading="lazy" />
+          <div class="spirit-overlay">
+            <h3>Artisan Crafts</h3>
+            <p>Traditional craftsmanship meets modern markets</p>
+          </div>
+        </div>
+        <div class="spirit-card reveal-card" style="--delay: 0.3s">
+          <img src="assets/images/Open Market.jfif" alt="Market trade" class="spirit-img" loading="lazy" />
+          <div class="spirit-overlay">
+            <h3>Open Market</h3>
+            <p>A vibrant market hub connecting traders and consumers</p>
+          </div>
+        </div>
+        <div class="spirit-card reveal-card" style="--delay: 0.45s">
+          <img src="assets/images/Tech & Innovation.jfif" alt="Technology" class="spirit-img" loading="lazy" />
+          <div class="spirit-overlay">
+            <h3>Tech & Innovation</h3>
+            <p>Embracing the digital future for our youth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= YOUTH EMPOWERMENT ======= -->
+  <section class="youth-section">
+    <div class="container">
+      <div class="youth-grid">
+        <div class="youth-image reveal-left">
+          <div class="youth-img-collage">
+            <img src="assets/images/Yoouth%20empower.jpeg" alt="Youth Empowerment in Ekenobizi" class="yi-main" loading="lazy" />
+            <img src="assets/images/sport.jfif" alt="Youth sports" class="yi-secondary" loading="lazy" />
+            <div class="youth-badge-float">
+              <span>🎓</span>
+              <strong>Next Generation</strong>
+            </div>
+          </div>
+        </div>
+        <div class="youth-content reveal-right">
+          <div class="section-tag">Youth</div>
+          <h2 class="section-title">Empowering <em>Our Youth</em></h2>
+          <p class="youth-text">
+            We believe the future of Ekenobizi depends entirely on how well we invest in our young people. Through structured mentorship programs, scholarships, and vocational training, we are shaping a generation of confident, capable leaders.
+          </p>
+          <ul class="youth-checklist">
+            <li class="reveal-item"><span class="check">✓</span> Full scholarship programs for academic excellence</li>
+            <li class="reveal-item"><span class="check">✓</span> Vocational & skills training centres</li>
+            <li class="reveal-item"><span class="check">✓</span> Youth entrepreneurship grants</li>
+            <li class="reveal-item"><span class="check">✓</span> Sports and cultural exchange programmes</li>
+          </ul>
+          <a href="#cta" class="btn btn-primary">Support Youth Initiative</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ======= GALLERY SECTION ======= -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Media</div>
+        <h2 class="section-title">Cultural <span class="highlight">Gallery</span></h2>
+        <p class="section-desc">A visual journey through the heritage, celebrations, and daily life of the Ekenobizi people.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <!-- Image Item -->
+        <div class="gallery-item reveal-card" style="--delay: 0s">
+          <img src="assets/images/Traditionsl fOOD.jfif" alt="Traditional Ekenobizi Food" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon"><i class="fa-solid fa-utensils"></i></span>
+            <span class="gallery-type">Traditional Cuisine</span>
+          </div>
+        </div>
+        
+        <!-- Video Item (Simulated) -->
+        <div class="gallery-item reveal-card" style="--delay: 0.1s">
+          <video autoplay muted loop playsinline class="gallery-img">
+            <source src="assets/Videos/cULTURAL DANCE VIDEO .mp4" type="video/mp4">
+          </video>
+          <div class="gallery-overlay">
+            <span class="gallery-icon"><i class="fa-solid fa-circle-play"></i></span>
+            <span class="gallery-type">Cultural Celebration</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal-card" style="--delay: 0.2s">
+          <video autoplay muted loop playsinline class="gallery-img">
+            <source src="assets/Videos/Heritage.mp4" type="video/mp4">
+          </video>
+          <div class="gallery-overlay">
+            <span class="gallery-icon"><i class="fa-solid fa-circle-play"></i></span>
+            <span class="gallery-type">Ancestral Heritage</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal-card" style="--delay: 0.3s">
+          <img src="assets/images/TECH for gallery.jfif" alt="Ekenobizi Digital Innovation" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon"><i class="fa-solid fa-laptop-code"></i></span>
+            <span class="gallery-type">Digital Innovation</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal-card" style="--delay: 0.4s">
+          <img src="assets/images/Yoouth%20empower.jpeg" alt="Youth Development in Ekenobizi" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon"><i class="fa-solid fa-seedling"></i></span>
+            <span class="gallery-type">Youth Development</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal-card" style="--delay: 0.5s">
+          <img src="assets/images/Bui9ldign.jfif" alt="Ekenobizi Architecture" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon"><i class="fa-solid fa-hotel"></i></span>
+            <span class="gallery-type">Modern Landmarks</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="gallery-actions reveal-up">
+        <a href="#" class="btn btn-primary">View More Moments</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA SECTION ======= -->
+  <section id="cta" class="cta-section">
+    <div class="cta-bg-anim"></div>
+    <div class="container">
+      <div class="cta-content reveal-up">
+        <div class="cta-icon"><i class="fa-solid fa-crown"></i></div>
+        <h2 class="cta-title">Be Part of the Progress</h2>
+        <p class="cta-subtitle">
+          Join us in building a stronger Ekenobizi. Your support makes a difference.
+        </p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-gold pulse-btn" id="joinBtn">Join Us</a>
+          <a href="#guardians" class="btn btn-outline-white" id="partnerBtn">Partner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="brand-emblem">E</div>
+            <div class="brand-text">
+              <span class="brand-name">Ekenobizi</span>
+              <span class="brand-subtitle">Autonomous Community</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Unity that runs deep,<br />Vision that soars high.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#guardians">Our Leadership</a></li>
+            <li><a href="#projects">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#cta">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Cultural Heritage</a></li>
+            <li><a href="#">Youth Programs</a></li>
+            <li><a href="#">Entrepreneurship</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Ekenobizi, Abia State, Nigeria</p>
+          <p><i class="fa-solid fa-phone-flip"></i> +234 800 000 0000</p>
+          <p><i class="fa-solid fa-envelope-open-text"></i> info@ekenobizi.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Ekenobizi Autonomous Community. All rights reserved.</p>
+        <p>Built with ❤️ for the Ekenobizi people</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
